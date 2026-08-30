@@ -51,25 +51,78 @@
             //};
 
             //2.
-              //foreach (KeyValuePair<int, string> pair in playersScore)
-             //Console.WriteLine(pair.Key);
+            //foreach (KeyValuePair<int, string> pair in playersScore)
+            //Console.WriteLine(pair.Key);
 
             //3.
-              //string val = playersScore[500];
-              //Console.WriteLine($"First Value in Dict => {val} ");
+            //string val = playersScore[500];
+            //Console.WriteLine($"First Value in Dict => {val} ");
 
             //4.
-             //bool isexist  = playersScore.ContainsKey(500);
-             //Console.WriteLine(isexist);
+            //bool isexist  = playersScore.ContainsKey(500);
+            //Console.WriteLine(isexist);
 
             //5.
-           //playersScore.TryGetValue(999, out string? score);
-           //Console.WriteLine(score??"Null");
+            //playersScore.TryGetValue(999, out string? score);
+            //Console.WriteLine(score??"Null");
 
             //6.
             //playersScore.Remove(200);
             //foreach (KeyValuePair<int, string> pair in playersScore)
             //Console.WriteLine(pair);
+
+
+
+            #endregion
+
+            #region Exercise 3: Phone Book
+            //1.
+            //Dictionary<string, int> PhonBook = new()
+            //{
+            //    {"Marwan",01222648797},
+            //    {"Mariam",01229844442},
+            //    {"Hamza",01033768045},
+            //    {"Mohamed",01277323956}
+            //};
+
+            //2.
+            //PhonBook["Sara"] = 01228976214;
+
+            //3.
+            //try
+            //{
+            //    PhonBook.Add("Marwan", 01229844442);
+            //}
+            //catch (ArgumentException ex)
+            //{
+            //    Console.WriteLine("Error you try add same exist key");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Error : Donnt Try Add Duplicate Key");
+            //}
+
+            //4.
+            //bool resultOfAdding= PhonBook.TryAdd("Marwan",01229844442);
+            //   Console.WriteLine(resultOfAdding);
+
+            //5.
+            //bool resultOfSearch = PhonBook.TryGetValue("Memo",out int val);
+            //Console.WriteLine(resultOfSearch);
+
+            //6.
+            // bool resultOfSearch = PhonBook.TryGetValue("Memo", out int val);
+            // if (resultOfSearch)
+            //     Console.WriteLine($"Found => {val}");
+            // else
+            //     Console.WriteLine("Not Found"); 
+
+            //7.
+            //foreach (string value in PhonBook.Keys)
+            //    Console.Write($"{value} ,");
+            //Console.WriteLine();
+            //foreach (int value in PhonBook.Values)
+            //    Console.Write($"{value} ,");
 
 
 
