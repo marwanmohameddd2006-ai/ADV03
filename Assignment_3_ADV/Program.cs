@@ -127,6 +127,49 @@
 
 
             #endregion
+
+            #region Exercise 4: Unique Email Validator
+            //1.
+            //HashSet<string> hashset01 = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            
+            //2.
+            //{
+            //     "ahmed@test.com",
+            //     "AHMED@test.com",
+            //     "sara@test.com",
+            //     "Sara@Test.Com"
+            //};
+
+            //3.
+            //Console.WriteLine($"{hashset01.Count}"); // = 2;
+            /*Explain:
+                 i use (StringComparer.OrdinalIgnoreCase) 
+                 and add => (sara captil and small) in compiler defin as one item
+             */
+
+            //4.
+            //HashSet<int> A = [ 1, 2, 3, 4, 5 ];
+            //HashSet<int> B =  [4, 5, 6, 7, 8] ;
+            //HashSet<int> D =  [1,2] ;
+
+            //5.
+            //A.UnionWith(B);
+            //ConsolHelper.PrintHashSet(A);
+
+            // A.IntersectWith(B);
+            //ConsolHelper.PrintHashSet(A);
+
+            //A.ExceptWith(B);
+            //ConsolHelper.PrintHashSet(A);
+
+            // A.SymmetricExceptWith(B);
+            // ConsolHelper.PrintHashSet(A);
+
+            //6.
+            //bool result= D.IsSubsetOf(A);  
+            //Console.WriteLine(result);
+  
+            #endregion
         }
     }
 }
