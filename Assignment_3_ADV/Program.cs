@@ -39,6 +39,41 @@
             //Failed
 
             #endregion
+
+            #region Exercise 2: Leaderboard
+            //1.
+            //Dictionary<int, string> playersScore = new()
+            //{
+            //    { 500,"Ahmed"},
+            //    {200,"Sara"},
+            //    {800,"Ali"},
+            //    { 350,"Mona"}
+            //};
+
+            //2.
+              //foreach (KeyValuePair<int, string> pair in playersScore)
+             //Console.WriteLine(pair.Key);
+
+            //3.
+              //string val = playersScore[500];
+              //Console.WriteLine($"First Value in Dict => {val} ");
+
+            //4.
+             //bool isexist  = playersScore.ContainsKey(500);
+             //Console.WriteLine(isexist);
+
+            //5.
+           //playersScore.TryGetValue(999, out string? score);
+           //Console.WriteLine(score??"Null");
+
+            //6.
+            //playersScore.Remove(200);
+            //foreach (KeyValuePair<int, string> pair in playersScore)
+            //Console.WriteLine(pair);
+
+
+
+            #endregion
         }
     }
 }
