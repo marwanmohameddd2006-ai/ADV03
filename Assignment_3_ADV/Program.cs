@@ -253,17 +253,17 @@
             // So, if I store the result in a bool variable and print it, it will print false
             // If I use the out parameter, it will contain the default value 
             //EX
-            for (int i = 0; i < s1.Capacity; i++)
-            {
-                if (s1.Count > 0)
-                {
-                    s1.Pop();
-
-                }
-            }
-            bool r = s1.TryPop(out string? h);
-            Console.WriteLine(r);
-            Console.WriteLine(h ?? "Null");
+           //for (int i = 0; i < s1.Capacity; i++)
+           //{
+           //    if (s1.Count > 0)
+           //    {
+           //        s1.Pop();
+           //
+           //    }
+           //}
+           //bool r = s1.TryPop(out string? h);
+           //Console.WriteLine(r);
+           //Console.WriteLine(h ?? "Null");
 
             #endregion
         }
