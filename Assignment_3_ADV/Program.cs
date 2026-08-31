@@ -214,7 +214,7 @@
             // If the Queue is empty, TryDequeue returns false
             // So, if I store the result in a bool variable and print it, it will print false
             // If I use the out parameter, it will contain the default value 
-               //EX
+            //EX
             //for (int i = 0; i < q1.Capacity; i++)
             //{
             //    if (q1.Count > 0)
@@ -226,6 +226,45 @@
             //bool r = q1.TryDequeue(out string? h);
             //Console.WriteLine(r);
             //Console.WriteLine(h??"Null");
+            #endregion
+
+            #region Exercise 6: Browser History (Undo)
+            //1.
+            //Stack<string> s1 = new Stack<string>();
+            //s1.Push("google.com");
+            //s1.Push("github.com");
+            //s1.Push("stackoverflow.com");
+            //s1.Push("youtube.com");
+            //s1.Push("claude.ai");
+
+            //2.
+            //Console.WriteLine(s1.Peek());
+
+            //3.
+            //Console.WriteLine($"{s1.Pop()}=> leave");
+            //Console.WriteLine($"{s1.Pop()}=> leave");
+            //Console.WriteLine($"{s1.Pop()}=> leave");
+
+            //4.
+            //Console.WriteLine($"{s1.Pop()}=>  current page after going back ");
+
+            //5.
+            // If the Stack is empty, TryPop returns false
+            // So, if I store the result in a bool variable and print it, it will print false
+            // If I use the out parameter, it will contain the default value 
+            //EX
+            for (int i = 0; i < s1.Capacity; i++)
+            {
+                if (s1.Count > 0)
+                {
+                    s1.Pop();
+
+                }
+            }
+            bool r = s1.TryPop(out string? h);
+            Console.WriteLine(r);
+            Console.WriteLine(h ?? "Null");
+
             #endregion
         }
     }
