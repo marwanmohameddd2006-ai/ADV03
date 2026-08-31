@@ -131,7 +131,7 @@
             #region Exercise 4: Unique Email Validator
             //1.
             //HashSet<string> hashset01 = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
-            
+
             //2.
             //{
             //     "ahmed@test.com",
@@ -168,7 +168,64 @@
             //6.
             //bool result= D.IsSubsetOf(A);  
             //Console.WriteLine(result);
-  
+
+            #endregion
+
+            #region Exercise 5: Print Queue Simulator 
+            //1.
+            //Queue<string> q1 = new Queue<string>();
+            //q1.Enqueue("Report.pdf");
+            //q1.Enqueue("Invoice.pdf");
+            //q1.Enqueue("Letter.docx");
+            //q1.Enqueue("Resume.pdf");
+            //q1.Enqueue("Photo.jpg");
+
+            //Console.WriteLine($"Count Of Queue = {q1.Count}");
+            //foreach (string item in q1)
+            //{
+            //    Console.WriteLine(item); ;
+            //}
+
+            //2.
+            //Console.WriteLine($"Queue Befor Peek And Count = {q1.Count}");
+            //foreach (string item in q1)
+            //{
+            //    Console.WriteLine(item); ;
+            //}
+            //q1.Peek();
+            //Console.WriteLine($"Queue After Peek And Count = {q1.Count}");
+            //foreach (string item in q1)
+            //{
+            //    Console.WriteLine(item); ;
+            //}
+
+            //3.
+            //for(int i = 0; i < q1.Capacity; i++)
+            //{
+            //    if(q1.Count>0)
+            //    {
+            //        string q = q1.Dequeue();
+            //        Console.WriteLine($"Printing: {q}");
+            //    }
+
+            //}
+
+            //4.
+            // If the Queue is empty, TryDequeue returns false
+            // So, if I store the result in a bool variable and print it, it will print false
+            // If I use the out parameter, it will contain the default value 
+               //EX
+            //for (int i = 0; i < q1.Capacity; i++)
+            //{
+            //    if (q1.Count > 0)
+            //    {
+            //        q1.Dequeue();
+
+            //    }
+            //}          
+            //bool r = q1.TryDequeue(out string? h);
+            //Console.WriteLine(r);
+            //Console.WriteLine(h??"Null");
             #endregion
         }
     }
